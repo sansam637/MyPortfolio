@@ -1,7 +1,8 @@
 :root {
 
-    --text-color: #f5f4f4;
-    --link-color: #f8f2f4;
+    --text-color: black;
+    --link-color: black;
+    background-color: #FFF2EB;
 }
 
 * {
@@ -14,7 +15,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+/*body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
     background-image: url('night.jpeg');
@@ -22,7 +23,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-}
+}*/
 
 a {
     color: var(--link-color);
@@ -32,9 +33,14 @@ a {
 header {
 
     height: 100vh;
-        text-align: center;
+    text-align: center;
     padding: 60px 20px;
     text-emphasis-color: #000000;
+    background-color: #FFDCDC;
+    margin-bottom: 20px;
+}
+img{
+    margin-top: 30px;
 }
 
 header h1 {
@@ -44,13 +50,23 @@ header h1 {
 
 /* NAV BAR*/
 nav {
+    position: fixed;
     display: flex;
     align-items: center;
-    padding: 0 50px;
-    height: 80px;
-    justify-content: space-around;
+    padding: 20px;
+    height: 60px;
+    justify-content: space-between;
+    
 }
-
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+}
 nav a {
     color: var(--text-color);
     font-size: 22px;
@@ -61,15 +77,23 @@ h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 3rem;
-    color: #ffffff;
+    color: #000000;
 }
 
 h6 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 3rem;
-    color: #ffffff;
+    color: #000000;
 }
+h4 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+    color: #000000;
+    font-weight: lighter;
+}
+
 
 /*.container{
     padding: 30px 20px;
@@ -80,11 +104,10 @@ h6 {
 }*/
 .about {
     margin: 30px;
-    background-color: #6bcde8;
+    background-color: #FFE8CD;
     padding: 30px;
     border-radius: 5px;
     transition: transform 0.3s ease;
-    text-emphasis-color: #000000;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
     gap: 30px;
@@ -100,7 +123,7 @@ h6 {
 }
 
 .project {
-    background-color: #6bcde8;
+    background-color: #FFE8CD;
     margin: 30px;
     padding: 30px;
     border-radius: 15px;
@@ -111,18 +134,18 @@ h6 {
 .contact {
     text-align: center;
     margin: 30px;
-    background-color: #6bcde8;
+    background-color: #FFE8CD;
     padding: 5px;
     border-radius: 5px;
     transition: transform 0.3s ease;
     margin-bottom: 30px;
+
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #d3d2d2;
-    font-size: 0.9rem;
+    background-color: #FFD6BA
 }
 
 @media (max-width: 600px) {
